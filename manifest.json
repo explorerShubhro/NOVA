@@ -2,7 +2,7 @@
   "name": "Nova — AI Assistant",
   "short_name": "Nova",
   "description": "Nova — Physicist, Builder, Advisor. Truly unlimited.",
-  "start_url": "./nova.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
