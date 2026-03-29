@@ -1,5 +1,5 @@
 const CACHE = 'nova-v2';
-const SHELL = ['./nova.html', './manifest.json'];
+const SHELL = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -34,7 +34,7 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE).then(c => c.put(e.request, clone));
         }
         return res;
-      }).catch(() => caches.match('./nova.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });
